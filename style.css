@@ -26,6 +26,7 @@
     --a:hsl(136, 74%, 79%);
     --b:hsl(234, 33%, 78%);
     --lighter-gradient: linear-gradient(to right, var(--a),var(--b));
+    --height: ((10/100) * 100vh )
 }
 body{
     width: 100vw;
@@ -38,7 +39,7 @@ body::-webkit-scrollbar{
 }
 header{
     width: 100%;
-    height: 12%;
+    height: 5%;
     padding: 1rem 0rem;
     display: flex;
     justify-content: center;
@@ -296,10 +297,11 @@ footer p:hover{
         flex-direction: column-reverse;
         align-items: center;
     }
-    .leftMain,.rightMain{
-        width: 80%;
+    .rightMain{
+        display: none;
     }
     .leftMain{
+        width: 80%;
         margin-bottom: 5rem;
     }
     .leftMain h1,.leftMain p{
@@ -354,6 +356,9 @@ footer p:hover{
     }
 }
 @media screen and (max-width: 600px){
+    header{
+        height: 6%;
+    }
     .mobileIntro{
         display: block;
     }
